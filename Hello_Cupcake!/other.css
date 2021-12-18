@@ -1,0 +1,329 @@
+@font-face{
+	font-family: font1;
+	src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face{
+	font-family: font2;
+	src: url("fonts/Raleway-Italic.ttf");
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*header*/
+#navigation{ 
+	margin: 0;
+	padding: 0;
+	background-color: #fdfaf9;
+	text-align: center;
+	word-spacing: 50px;
+}
+
+#navigation ul{ 
+	margin: 0;
+}
+
+#navigation a{
+	font-family: font1;
+}
+
+.link{
+	display: inline-block; 
+	padding: 10px;
+	position: relative;
+	transition: background-color .5s ease; /*Transition for hover*/
+}
+
+.link a{
+	color: #2bb8b3;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.link:hover{ /*No space*/
+	background-color: lightgray;
+}
+
+/*Burger Menu*/
+#burger-menu{
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	left: 100%;
+	background: #3f3f3f;
+	padding: 5px;
+}
+
+#burger-menu div{
+	height: 5px;
+	width: 33px;
+	margin: 5px 0;
+	border-radius: 3px;
+	background: #FFF;
+	transition: transform .3s ease;
+}
+
+.active #burger-menu div:nth-child(1){
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.active #burger-menu div:nth-child(2){
+	opacity: 0;
+}
+
+.active #burger-menu div:nth-child(3){
+	transform: rotate(45deg) translate(-8px, -7px);
+}
+
+.active{
+	left: 0 !important;
+}
+
+.active #burger-menu{
+	background: #aa0016;
+}
+
+/* ------------------------------- CONTACT --------------------------------- */
+#contact{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.contact-section{
+	background: #e0f8fa;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.inner-width{
+	max-width: 800px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.contact-section h1{
+	font-size: 20px;
+	color: #000;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 400;
+}
+
+.text1, .text2, .text3, .text4, .text5{
+	background: none;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid;
+	color: #000;
+	padding: 10px 6px;
+	font-size: 14px;
+	margin-bottom: 40px;
+}
+
+.text1{
+	float: center;
+	width: 70%;
+}
+
+.text2{
+	float: center;
+	width: 70%;
+}
+
+.text3{
+	float: center;
+	width: 100%;
+}
+
+.text4{
+	float: center;
+	width: 70%;
+}
+
+.text5{
+	float: center;
+	width: 70%;
+}
+
+.contact-section button{
+	background: none;
+	color: #6E6E6DFF;
+	border: 1px solid #000;
+	padding: 12px 40px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-size: 14px;
+	transition: 0.4s linear;
+}
+
+.contact-section button:hover{
+	background: #6E6E6DFF;
+	color: #000;
+}
+
+/* ------------------------------------- Gallery ---------------------------------------------------------- */
+
+#images-holder{
+	background: #B0B8B4FF;
+}
+
+.pictures{
+	text-align: center;
+}
+
+.pictures img{
+	width: 35%;
+	height: auto;
+	border: 2px solid #71bbbf;
+	border-radius: 20px;
+	margin: 2% 5%;
+	padding: 16px;
+}
+
+.pictures img:hover{
+	transform: scale(1.1);
+}
+
+
+#modal-box{
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.9);
+	z-index: 100;
+}
+
+#modal-box span{
+	margin: 10px;
+	font-size: 3em;
+	float: right;
+	color: #dbdbdb;
+	cursor: pointer;
+}
+
+#modal-content img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 80%;
+	width: auto;
+}
+
+/*Footer*/
+#footer{
+	text-align: center;
+	background-color: #ffd7db;
+}
+
+#footer p{
+	font-size: 100%;
+	font-family: font2;
+	font-weight: bold;
+	color: #3ab3b8;
+}
+
+#logof img{
+	width: 7%;
+	height: auto;
+	padding-top: 20px;
+	margin-left: 20px;
+}
+
+#navigationfooter ul a{
+	display: inline-block;
+	font-size: 100%;
+	font-family: font2;
+	font-weight: bold;
+	color: #3ab3b8;
+	text-decoration: none;
+}
+
+#navigationfooter{
+	margin: 0px;
+}
+
+.linkf {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+#footer p{
+	margin-left: 20px;
+	margin-top: -3px;
+	padding-bottom: 10px;
+}
+
+.social-links img{
+	width: 4%;
+	height: 4%;
+	padding-left: 10px;
+	margin-top: -15px;
+}
+
+@media screen and (max-width: 800px){
+	#navigation{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: -200px;
+		width: 200px;
+	}
+
+	#burger-menu{
+		display: block;
+	}
+
+	.link li{
+		display: block;
+	}
+
+	/* ------------------------------------- Gallery ---------------------------------------------------------- */
+
+	.pictures img{
+		display: block;
+		width: 75%;
+		margin-top: 10%;
+		margin-left: 9%;
+	}
+
+	#modal-box{
+		display: none;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: rgba(0,0,0,.9);
+		z-index: 100;
+	}
+	#modal-box span{
+		margin: 10px;
+		font-size: 3em;
+		float: right;
+		color: #dbdbdb;
+		cursor: pointer;
+	}
+
+	#modal-content img{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 80%;
+		width: auto;
+	}
+}

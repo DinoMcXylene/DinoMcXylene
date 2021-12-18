@@ -1,0 +1,161 @@
+@font-face{
+	font-family: font1;
+	src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face{
+	font-family: font2;
+	src: url("fonts/Candy Shop Personal Use.ttf");
+}
+
+@font-face{
+	font-family: font3;
+	src: url("fonts/Little Candy Shop.ttf");
+}
+
+@font-face{
+	font-family: font4;
+	src: url("fonts/Raleway-Regular.ttf");
+}
+
+@font-face{
+	font-family: font5;
+	src: url("fonts/Lemon Brush - Personal Use.otf");
+}
+
+@font-face{
+	font-family: font6;
+	src: url("fonts/Raleway-Italic.ttf");
+}
+
+@font-face{
+	font-family: font7;
+	src: url("fonts/Font Awesome.otf");
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#header{ 
+	margin: 0;
+	padding: 0;
+	background-color: #fdfaf9;
+	text-align: center;
+	word-spacing: 50px;
+}
+
+#header ul{ 
+	margin: 0;
+}
+
+#header a{
+	font-family: font1;
+}
+
+.link{
+	display: inline-block; 
+	padding: 10px;
+	position: relative;
+	transition: background-color .5s ease; /*Transition for hover*/
+}
+
+.link a{
+	color: #2bb8b3;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.link:hover{ /*No space*/
+	background-color: lightgray;
+}
+
+
+#cupcakes{
+	text-align: center;
+	background-color: #e0f8fa;
+	padding: .25%;
+	color:#2bb8b3;
+	font-family: font5;
+	font-size: 40px;
+}
+
+#cupcake ul{
+	margin: 0;
+	text-align: center;
+}
+.btn{
+	display: inline-block; 
+	padding: 10px;
+	position: relative;
+	transition: background-color .5s ease; /*Transition for hover*/
+	text-align: center;
+}
+
+.btn{
+	color: #2bb8b3;
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+}
+
+.btn:hover{ /*No space*/
+	background-color: lightgray;
+}
+
+#title-content{
+	text-align: center;
+	padding-top: 5%;
+}
+
+#text-title{
+	font-family: font5;
+	font-size: 55px;
+	color: #2bb8b3;
+
+}
+
+#text-content{
+	font-family: font4;
+}
+
+.img{
+    text-align: center;
+}
+
+#img-container{
+    border: solid;
+    border-radius: 30px;
+    border-color:#e0f8fa;
+    background-color:#e0f8fa; 
+    padding: 5%;
+    margin: 7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#ingredients{
+	font-family: font4;
+	font-size: 35px;
+	color: #2bb8b3;
+	text-align: center;
+}
+#text-container{
+	text-align: left;
+	border: solid;
+    border-radius: 30px;
+    border-color: #e0f8fa;
+    margin:2% 7% 0% 7%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    background-color: #e0f8fa;
+}
+
+#cont1, #cont2{
+	font-family: font4;
+	line-height:30px;
+	padding: 2%;
+}

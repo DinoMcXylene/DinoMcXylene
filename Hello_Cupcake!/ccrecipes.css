@@ -1,0 +1,278 @@
+@font-face{
+	font-family: font1;
+	src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face{
+	font-family: font2;
+	src: url("fonts/Candy Shop Personal Use.ttf");
+}
+
+@font-face{
+	font-family: font3;
+	src: url("fonts/Little Candy Shop.ttf");
+}
+
+@font-face{
+	font-family: font4;
+	src: url("fonts/Raleway-Regular.ttf");
+}
+
+@font-face{
+	font-family: font5;
+	src: url("fonts/Lemon Brush - Personal Use.otf");
+}
+
+@font-face{
+	font-family: font6;
+	src: url("fonts/Raleway-Italic.ttf");
+}
+
+@font-face{
+	font-family: font7;
+	src: url("fonts/Font Awesome.otf");
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation{ 
+	margin: 0;
+	padding: 0;
+	background-color: #fdfaf9;
+	text-align: center;
+	word-spacing: 50px;
+}
+
+#navigation ul{ 
+	margin: 0;
+}
+
+#navigation a{
+	font-family: font1;
+}
+
+.link{
+	display: inline-block; 
+	padding: 10px;
+	position: relative;
+	transition: background-color .5s ease; /*Transition for hover*/
+}
+
+.link a{
+	color: #2bb8b3;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.link:hover{ /*No space*/
+	background-color: lightgray;
+}
+
+/*Burger Menu*/
+#burger-menu{
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	left: 100%;
+	background: #3f3f3f;
+	padding: 5px;
+}
+
+#burger-menu div{
+	height: 5px;
+	width: 33px;
+	margin: 5px 0;
+	border-radius: 3px;
+	background: #FFF;
+	transition: transform .3s ease;
+}
+
+.active #burger-menu div:nth-child(1){
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.active #burger-menu div:nth-child(2){
+	opacity: 0;
+}
+
+.active #burger-menu div:nth-child(3){
+	transform: rotate(45deg) translate(-8px, -7px);
+}
+
+.active{
+	left: 0 !important;
+}
+
+.active #burger-menu{
+	background: #aa0016;
+}
+
+
+#cupcakes{
+	text-align: center;
+	background-color: #e0f8fa;
+	padding: .25%;
+	color:#2bb8b3;
+	font-family: font1;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+#cupcake{
+	background: #e0f8fa;
+}
+
+#cupcake ul{
+	margin: 0;
+	text-align: center;
+	background-color: #c4f7fb;
+}
+
+.btn{
+	display: inline-block; 
+	padding: 10px;
+	position: relative;
+	transition: background-color .5s ease; /*Transition for hover*/
+	text-align: center;
+}
+
+.btn{
+	color: #2bb8b3;
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+}
+
+.btn:hover{ /*No space*/
+	background-color: lightgray;
+}
+
+#title-content{
+	text-align: center;
+	padding-top: 5%;
+}
+
+#text-title{
+	font-family: font5;
+	font-size: 55px;
+	color: #2bb8b3;
+
+}
+
+#text-content{
+	font-family: font4;
+}
+
+.img{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#img-container{
+    border: solid;
+    border-radius: 30px;
+    border-color:#e0f8fa;
+    background-color:#e0f8fa; 
+    padding: 5%;
+    margin: 7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#ingredients{
+	font-family: font4;
+	font-size: 35px;
+	color: #2bb8b3;
+	text-align: center;
+}
+#text-container{
+	text-align: left;
+	border: dashed;
+    border-radius: 30px;
+    border-color: #2bb8b3;
+    margin:2% 7% 0% 7%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    background-color: #e0f8fa;
+}
+
+#cont1, #cont2{
+	font-family: font4;
+	line-height:30px;
+	padding: 2%;
+}
+
+/*Footer*/
+#footer{
+	text-align: center;
+	background-color: #ffd7db;
+}
+
+#footer p{
+	font-size: 100%;
+	font-family: font6;
+	font-weight: bold;
+	color: #3ab3b8;
+}
+
+#logof img{
+	width: 7%;
+	height: auto;
+	padding-top: 20px;
+	margin-left: 20px;
+}
+
+#navigationfooter ul a{
+	display: inline-block;
+	font-size: 100%;
+	font-family: font6;
+	font-weight: bold;
+	color: #3ab3b8;
+	text-decoration: none;
+}
+
+#navigationfooter{
+	margin: 0px;
+}
+
+.linkf {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+#footer p{
+	margin-left: 20px;
+	margin-top: -3px;
+	padding-bottom: 10px;
+}
+
+.social-links img{
+	width: 4%;
+	height: 4%;
+	padding-left: 10px;
+	margin-top: -15px;
+}
+
+@media screen and (max-width: 500px){
+	#navigation{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: -200px;
+		width: 200px;
+	}
+
+	#burger-menu{
+		display: block;
+	}
+
+	.link li{
+		display: block;
+	}
+}
